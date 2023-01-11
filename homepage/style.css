@@ -1,0 +1,44 @@
+body {
+  background-color: #EEEEEE;
+}
+
+h1 {
+  color: #3d4449;
+  font-family: 'Montserrat-Black', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h2 {
+  color: #3d4449;
+  font-family: 'Montserrat-Black', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+p {
+  text-align: left;
+  font-size: 1rem;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: grey;
+  margin: 30px auto;
+  border-width: 5px;
+  width: 5%;
+}
+
+.fit-picture {
+  width: 50%;
+  height: auto;
+}
+
+#form, #footer {
+  text-align: center;
+}

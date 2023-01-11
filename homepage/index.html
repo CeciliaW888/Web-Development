@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="icon" href="favicon.ico?v=2">
+        <script src="https://kit.fontawesome.com/4ba19c2e57.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Roboto+Slab&family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <title>Cecilia' Website</title>
+    </head>
+    <body>
+        <section id="title">
+
+            <!--Nav bar-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="">Cecilia's Space</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Collapsible hamburger menu-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="navbar-item">
+                            <a class="nav-link" href="portfolio.html">Portfolios</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="books.html">Books</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="hobbies.html">Hobbies</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+            <!--Title-->
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Hi, welcome to my homepage</h1>
+                    <h2>My name is Cecilia, a Data Analyst.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <button type="button" class="btn btn-info" onclick="window.location.href='portfolio.html';">Learn More</button>
+                </div>
+
+                <div class="col-lg-6">
+                    <img class="fit-picture" src="images/title.jpg" alt="Mindfulness">
+                </div>
+
+            </div>
+
+        </section>
+
+        <hr>
+
+        <!--Skills-->
+        <h2>
+            My Skillset
+        </h2>
+        <ol>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            <li>Excepteur sint occaecat cupidatat non proident.</li>
+        </ol>
+
+        <hr>
+
+
+        <!--Form-->
+        <form id="form">
+            <input autocomplete="off" autofocus  type="email" placeholder="sophie@example.com">
+            <button type="button" class="btn btn-secondary" onclick="subscribe()">Subscribe to my channel!</button>
+            <!-- Add a paragrah that provides feedback after user submit-->
+            <p id="message"></p>
+            <script>
+                function subscribe() {
+                  var txt;
+                  if (confirm("Press Ok to subscribe!")) {
+                    txt = "You are now subscribed!";
+                  } else {
+                    txt = "Hope to see you soon!";
+                  }
+                  document.getElementById("message").innerHTML = txt;
+                }
+            </script>
+        </form>
+
+        <!-- Footer -->
+        <footer>
+            <p id="footer">© Copyright 2023 Cecilia</p>
+        </footer>
+
+        <!--Scripts-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+</html>
